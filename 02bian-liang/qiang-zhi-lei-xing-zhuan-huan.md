@@ -21,7 +21,8 @@
 <?php
 
     $a = 7;
-    setType( $a, 'bool' );
+    setType( $a, 'bool' );  // $a被转化为布尔类型
+    
 ?>
 ```
 
