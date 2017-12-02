@@ -1,1 +1,12 @@
-# First Chapter
+# Hello PHP
+
+```
+<?php
+
+    echo 'hello php!';
+
+?>
+```
+
+
+
