@@ -1,21 +1,31 @@
 #### 1.单引号定义
 
 ```php
-$str = 'i love you';
+<?php
+
+    $str = 'i love you';
+    
+?>
 ```
 
 #### 2.双引号定义
 
 ```php
-$str = "i love you";
+<?php
+    
+    $str = "i love you";
+    
+?>
 ```
 
 #### 3.定界符 heredoc 定义
 
 ```php
-$str = <<<ABCD
+<?php
 
- ... ... // 一大段文字
+    $str = <<<ABCD
+
+     ... ... // 一大段文字
 
 ABCD;
 
@@ -25,6 +35,7 @@ ABCD;
     ABCD;  要顶头写，分号后立即回车
 */
 
+?>
 ```
 
 
