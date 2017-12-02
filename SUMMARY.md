@@ -7,6 +7,7 @@
   * [b.变量命名](02bian-liang/bbian-liang-ming-ming.md)
   * [c.数据类型](02bian-liang/cshu-ju-lei-xing.md)
   * [d.定义字符串的三种方式](dding-yi-zi-fu-chuan-de-san-zhong-fang-shi.md)
+  * [e.单引号&双引号的区别](02bian-liang/edan-yin-hao-3001-shuang-yin-hao-de-qu-bie.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
