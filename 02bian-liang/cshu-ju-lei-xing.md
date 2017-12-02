@@ -4,25 +4,23 @@
 
 ##### 四种标准类型
 
-布尔类型    bool
+    布尔类型    bool
 
-整数类型    int
+    整数类型    int
 
-浮点类型    float
+    浮点类型    float
 
-字符串型    string
+    字符串型    string
 
 ##### 两种复合类型
 
-数组类型    array
+    数组类型    array
 
-对象类型    object
+    对象类型    object
 
 ##### 两种特殊类型
 
-资源类型    resource
+    资源类型    resource
 
-空类型       null
-
-
+    空类型       null
 
