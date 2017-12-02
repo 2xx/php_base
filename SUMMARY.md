@@ -12,7 +12,8 @@
   * [e.单引号&双引号的区别](02bian-liang/edan-yin-hao-3001-shuang-yin-hao-de-qu-bie.md)
   * [f.实际代码中的变量与字符串](02bian-liang/fshi-ji-dai-ma-zhong-de-bian-liang-yu-zi-fu-chuan.md)
   * [g.变量的销毁](02bian-liang/gbian-liang-de-xiao-hui.md)
-  * h.可变变量
+  * [h.可变变量](02bian-liang/hke-bian-bian-liang.md)
+  * [i.引用变量](02bian-liang/iyin-yong-bian-liang.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
