@@ -41,8 +41,8 @@
 ```php
 <?php
 
-    echo 'i \'love\' you';
-    echo "i \"miss\" you";
+    echo 'i \'love\' you';  // i  'love'  you
+    echo "i \"miss\" you";  // i  "miss"  you
 
 ?>
 ```
