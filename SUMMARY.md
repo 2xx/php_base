@@ -6,8 +6,16 @@
   * [a.概念理解与解释说明](02bian-liang/agai-nian-li-jie-yu-jie-shi-shuo-ming.md)
   * [b.变量命名](02bian-liang/bbian-liang-ming-ming.md)
   * [c.数据类型](02bian-liang/cshu-ju-lei-xing.md)
+  * [隐式类型转换](02bian-liang/yin-shi-lei-xing-zhuan-huan.md)
   * [d.定义字符串的三种方式](dding-yi-zi-fu-chuan-de-san-zhong-fang-shi.md)
   * [e.单引号&双引号的区别](02bian-liang/edan-yin-hao-3001-shuang-yin-hao-de-qu-bie.md)
+  * [f.实际代码中的变量与字符串](02bian-liang/fshi-ji-dai-ma-zhong-de-bian-liang-yu-zi-fu-chuan.md)
+  * [g.变量的销毁](02bian-liang/gbian-liang-de-xiao-hui.md)
+  * h.可变变量
+  * i.引用变量
+  * [j.是否有定义](02bian-liang/hshi-fou-you-ding-yi.md)
+  * [隐式类型转换](02bian-liang/yin-shi-lei-xing-zhuan-huan.md)
+  * [强制类型转换](02bian-liang/qiang-zhi-lei-xing-zhuan-huan.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
