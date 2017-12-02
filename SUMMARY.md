@@ -3,6 +3,7 @@
 * [简介](README.md)
 * [01\_Hello PHP!](chapter1.md)
 * [02\_变量](02bian-liang.md)
+  * [a.概念理解与解释说明](02bian-liang/agai-nian-li-jie-yu-jie-shi-shuo-ming.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
