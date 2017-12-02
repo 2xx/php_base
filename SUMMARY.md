@@ -16,6 +16,12 @@
   * [i.引用变量](02bian-liang/iyin-yong-bian-liang.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
+  * a.算术运算符
+  * b.赋值运算符
+  * c.比较运算符
+  * d.逻辑运算符
+  * e.其它运算符
+  * f.运算符的优先级
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
 * [06\_函数](06han-shu.md)
 * [07\_数组](07shu-zu.md)
