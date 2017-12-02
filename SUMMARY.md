@@ -6,6 +6,7 @@
   * [a.概念理解与解释说明](02bian-liang/agai-nian-li-jie-yu-jie-shi-shuo-ming.md)
   * [b.变量命名](02bian-liang/bbian-liang-ming-ming.md)
   * [c.数据类型](02bian-liang/cshu-ju-lei-xing.md)
+  * [d.定义字符串的三种方式](dding-yi-zi-fu-chuan-de-san-zhong-fang-shi.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
