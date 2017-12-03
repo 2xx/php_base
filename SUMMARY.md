@@ -25,6 +25,7 @@
   * [a.算术运算符](04yun-suan-fu/asuan-zhu-yun-suan-fu.md)
   * [自增运算](04yun-suan-fu/zi-zeng-yu-zi-jian.md)
   * [自减运算](04yun-suan-fu/zi-jian-yun-suan.md)
+  * [自增自减 & 布尔类型](04yun-suan-fu/zi-zeng-zi-jian-and-bu-er-lei-xing.md)
   * [b.赋值运算符](04yun-suan-fu/bfu-zhi-yun-suan-fu.md)
   * [c.比较运算符](04yun-suan-fu/cbi-jiao-yun-suan-fu.md)
   * [d.逻辑运算符](04yun-suan-fu/dluo-ji-yun-suan-fu.md)
