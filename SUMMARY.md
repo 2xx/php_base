@@ -18,13 +18,13 @@
   * [k.是否为空 empty](02bian-liang/kshi-fou-wei-kong-empty.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
-  * a.算术运算符
+  * [a.算术运算符](04yun-suan-fu/asuan-zhu-yun-suan-fu.md)
   * [自增 与 自减](04yun-suan-fu/zi-zeng-yu-zi-jian.md)
   * b.赋值运算符
   * c.比较运算符
   * d.逻辑运算符
   * e.其它运算符
-  * f.运算符的优先级
+  * [f.运算符的优先级](04yun-suan-fu/fyun-suan-fu-de-you-xian-ji.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
 * [06\_函数](06han-shu.md)
 * [07\_数组](07shu-zu.md)
