@@ -9,7 +9,7 @@
     define('PI', 3.1415926);
 
     echo LOVE;
-    echo PI*7; // 常量是可以参与运算的
+    echo PI * 7; // 常量是可以参与运算的
 
 ?>
 ```
@@ -22,7 +22,8 @@
     const LOVE = 'i love you!';
     const PI = 3.1415926;
 
-    
+    echo LOVE;
+    echo PI * 7;
 ?>
 ```
 
