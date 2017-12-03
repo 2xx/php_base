@@ -44,5 +44,9 @@ php语法规范中，推荐尽量使用 const
 
 可以通过 defined\('名称'\) 判断某个常量是否已经定义
 
-get\__defined_
+get\_defined\_constants\(\)  获取所有常量
+
+get\_defined\_constants\(true\) 获取所有常量，并分好组
+
+get\_defined\_constants\(true\)\['user'\]  获取所有自定的常量
 
