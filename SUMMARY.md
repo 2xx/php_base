@@ -15,7 +15,7 @@
   * [h.可变变量](02bian-liang/hke-bian-bian-liang.md)
   * [i.引用变量](02bian-liang/iyin-yong-bian-liang.md)
   * [j.是否有定义 isset](02bian-liang/jshi-fou-you-ding-yi-isset.md)
-  * k.是否为空 empty
+  * [k.是否为空 empty](02bian-liang/kshi-fou-wei-kong-empty.md)
 * [03\_常量](03chang-liang.md)
 * [04\_运算符](04yun-suan-fu.md)
   * a.算术运算符
