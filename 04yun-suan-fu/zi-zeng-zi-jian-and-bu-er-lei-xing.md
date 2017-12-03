@@ -2,13 +2,13 @@
 
 ```php
 <?php
-    
+
     $a = true;
     $b = false;
-    
+
     $a--;
     $b++;
-    
+
     var_dump($a, $b); // $a还是true  $b还是false
 
 ?>
