@@ -17,6 +17,7 @@
   * [j.是否有定义 isset](02bian-liang/jshi-fou-you-ding-yi-isset.md)
   * [k.是否为空 empty](02bian-liang/kshi-fou-wei-kong-empty.md)
 * [03\_常量](03chang-liang.md)
+  * [a.概念理解与定义](03chang-liang/agai-nian-li-jie-yu-ding-yi.md)
 * [04\_运算符](04yun-suan-fu.md)
   * [a.算术运算符](04yun-suan-fu/asuan-zhu-yun-suan-fu.md)
   * [自增 与 自减](04yun-suan-fu/zi-zeng-yu-zi-jian.md)
