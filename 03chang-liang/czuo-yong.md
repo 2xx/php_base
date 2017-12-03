@@ -13,10 +13,10 @@
 
     const MAX_AGE = 30;
 
-    if ($age <= MAX_AGE) {
+    if ($age <= MAX_AGE) {    // 仅看 MAX_AGE 就可以推测出数据所代表的意思
         echo '可以娶回来当媳妇';
     }
-    
+
 ?>
 ```
 
