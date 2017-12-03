@@ -19,12 +19,28 @@
 
 ```php
 <?php
+
+    $a = 'abc';
+    $b = 'def';
+
+    $c = $a.$b;
+    echo $c;     // 'abcdef'
+
+?>
+```
+
+#### 用 echo 输出的说明
+
+```php
+<?php
+
     $a = 'abc';
     $b = 'def';
     
-    $c = $a.$b;
-    echo $c;     // 'abcdef'
+    echo $a.$b;  // 将两个变量的值连接到一起，再输出
     
+    echo $a,$b;  // 先输出$a, 再输出$b
+
 ?>
 ```
 
