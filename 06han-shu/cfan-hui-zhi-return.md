@@ -3,7 +3,7 @@
 ```php
 <?php
 
-    echo 2 + test(); // 2 + 5
+    echo 2 + test(); // 2 + 5  函数执行后的结果是5  所以最后显示输出 7
 
     function test()
     {
