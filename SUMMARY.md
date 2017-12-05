@@ -37,7 +37,9 @@
   * [break  continue  die](05liu-cheng-kong-zhi/break-continue-die.md)
 * [06\_函数](06han-shu.md)
   * [a.概念理解与定义](06han-shu/agai-nian-li-jie-yu-ding-yi.md)
-  * b.形参&实参、引用传参
+  * [b.形参&实参、引用传参](06han-shu/bxing-53c226-shi-can-3001-yin-yong-chuan-can.md)
+  * c.返回值 return
+  * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
 * [07\_数组](07shu-zu.md)
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
