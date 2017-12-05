@@ -79,20 +79,20 @@
 
     xxoo('test');    // 调用xxoo函数, $n='test'
                      // 该函数反回来调用 test 这个函数, 当然也算是变量函数
-    
+
     /*
       实参是一个匿名函数, 赋值给$n, 函数内部反回来调用这个匿名函数
     */
     xxoo(function(){
         echo '我是一个匿名函数<br>';
     });
-    
-    
+
+
     function xxoo($n)
     {
         $n();
     }
-    
+
     function test()
     {
         echo '我是test函数<br>';
@@ -105,7 +105,7 @@
 
 ```php
 <?php
-    
+
     function test($n)
     {
         echo $n,'<br>';
@@ -121,7 +121,8 @@
 
 ```php
 <?php
-
+    // n ~ 1 的和
+    
     function sum($n)
     {
         if ($n > 1) {
