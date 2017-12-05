@@ -55,20 +55,81 @@
 ?>
 ```
 
-匿名函数调用自己
+**匿名函数调用自己**
 
 ```php
 <?php
-    
+
     $a = function xxoo($n)use(&$a){
             echo $n,'<br>';
             if ($n > 1) {
                 $a($n - 1);
             }
     };
-    
+
     $a(5);
+
+?>
+```
+
+#### 回调函数
+
+```php
+<?php
+
+    xxoo('test');    // 调用xxoo函数, $n='test'
+                     // 该函数反回来调用 test 这个函数, 当然也算是变量函数
     
+    /*
+      实参是一个匿名函数, 赋值给$n, 函数内部反回来调用这个匿名函数
+    */
+    xxoo(function(){
+        echo '我是一个匿名函数<br>';
+    });
+    
+    
+    function xxoo($n)
+    {
+        $n();
+    }
+    
+    function test()
+    {
+        echo '我是test函数<br>';
+    }
+
+?>
+```
+
+#### 递归函数   自己调用自己, 每次参数不同
+
+```php
+<?php
+    
+    function test($n)
+    {
+        echo $n,'<br>';
+        if ($n>1) {
+            test($n - 1);  
+        }
+        echo $n,'<br>';
+    }
+
+
+?>
+```
+
+```php
+<?php
+
+    function sum($n)
+    {
+        if ($n > 1) {
+            return $n + sum($n - 1);
+        }
+        return 1;
+    }
+
 ?>
 ```
 
