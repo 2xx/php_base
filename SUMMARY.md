@@ -36,6 +36,8 @@
   * [循环结构](05liu-cheng-kong-zhi/xun-huan-jie-gou.md)
   * [break  continue  die](05liu-cheng-kong-zhi/break-continue-die.md)
 * [06\_函数](06han-shu.md)
+  * [a.概念理解与定义](06han-shu/agai-nian-li-jie-yu-ding-yi.md)
+  * b.形参&实参、引用传参
 * [07\_数组](07shu-zu.md)
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
