@@ -38,7 +38,7 @@
 * [06\_函数](06han-shu.md)
   * [a.概念理解与定义](06han-shu/agai-nian-li-jie-yu-ding-yi.md)
   * [b.形参&实参、引用传参](06han-shu/bxing-53c226-shi-can-3001-yin-yong-chuan-can.md)
-  * c.返回值 return
+  * [c.返回值 return](06han-shu/cfan-hui-zhi-return.md)
   * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
 * [07\_数组](07shu-zu.md)
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
