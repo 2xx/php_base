@@ -40,11 +40,17 @@
   * [b.形参&实参、引用传参](06han-shu/bxing-53c226-shi-can-3001-yin-yong-chuan-can.md)
   * [c.返回值 return](06han-shu/cfan-hui-zhi-return.md)
   * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
+  * e.引入文件  include
+  * 通过手册学习系统函数
 * [07\_数组](07shu-zu.md)
   * [概念理解与分类](07shu-zu/gai-nian-li-jie.md)
   * [基本定义和操作](07shu-zu/ji-ben-ding-yi-he-cao-zuo.md)
   * 通过 array  和 \[  \] 定义
   * [遍历数组  foreach](07shu-zu/bian-li-shu-zu-foreach.md)
+  * 另外三种遍历
+  * 超全局数组
+  * 二维数组
+  * 函数变长参数
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
 * [10\_时间日期](10shi-jian-ri-qi.md)
