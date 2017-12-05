@@ -42,5 +42,19 @@
 ?>
 ```
 
+**逻辑异或    xor**
+
+```php
+<?php
+
+    // 异或, 不一样,  符号两边不相同,结果为真  符号两边相同,结果为假
+    var_dump( 5 > 1 xor 2 < 7 );  // false       真xor真   假
+    var_dump( 5 < 1 xor 2 < 7 );  // false       假xor真   真
+    var_dump( 5 > 1 xor 2 > 7 );  // false       真xor假   真
+    var_dump( 5 < 1 xor 2 > 7 );  // false       假xor假   假
+
+?>
+```
+
 
 
