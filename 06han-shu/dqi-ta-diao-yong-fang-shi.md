@@ -35,19 +35,23 @@
 ?>
 ```
 
+**普通函数中的匿名函数**
+
 ```php
 <?php
 
     function test()
     {
         $name = '小甜甜';
-        return function()use($name){
+        return function()use($name){   // use 让匿名函数可以使用父函数中的变量
             echo '我是test函数内部的一个匿名函数<br>';
             echo '我可以使用test函数中的局部变量$name,它的值是 '.$name;
         };
     }
 
-    $a = test();
+    $a = test(); // 调用 test() 函数, 返回匿名函数赋值给$a
+    $a();        // 通过 $a调用匿名函数
+    
 ?>
 ```
 
