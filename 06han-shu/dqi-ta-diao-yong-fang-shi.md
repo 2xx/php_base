@@ -5,6 +5,9 @@
 ```php
 <?php
 
+    $a = 'test';   // 1.把函数名称存放在变量中
+    $a();          // 2.通过变量调用函数
+
     function test()
     {
         echo '我是test函数!';
