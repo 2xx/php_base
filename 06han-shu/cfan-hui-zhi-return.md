@@ -3,7 +3,11 @@
 ```php
 <?php
 
-    
+    function test()
+    {
+        return 5;
+        echo '今天作业不用写了';
+    }
 
 ?>
 ```
