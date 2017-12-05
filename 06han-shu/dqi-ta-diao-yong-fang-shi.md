@@ -5,7 +5,10 @@
 ```php
 <?php
 
-    
+    function test()
+    {
+        echo '我是test函数!';
+    }
 ?>
 ```
 
