@@ -41,6 +41,10 @@
   * [c.返回值 return](06han-shu/cfan-hui-zhi-return.md)
   * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
 * [07\_数组](07shu-zu.md)
+  * [概念理解与分类](07shu-zu/gai-nian-li-jie.md)
+  * [基本定义和操作](07shu-zu/ji-ben-ding-yi-he-cao-zuo.md)
+  * 通过 array  和 \[  \] 定义
+  * [遍历数组  foreach](07shu-zu/bian-li-shu-zu-foreach.md)
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
 * [10\_时间日期](10shi-jian-ri-qi.md)
