@@ -105,6 +105,7 @@
 
 ```php
 <?php
+    // 简单回文数
 
     function test($n)
     {
@@ -122,7 +123,7 @@
 ```php
 <?php
     // n ~ 1 的和
-    
+
     function sum($n)
     {
         if ($n > 1) {
