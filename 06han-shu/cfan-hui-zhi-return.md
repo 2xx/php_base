@@ -3,6 +3,8 @@
 ```php
 <?php
 
+    echo 2 + test(); // 2 + 5
+
     function test()
     {
         return 5;
