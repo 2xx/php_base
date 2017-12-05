@@ -31,7 +31,6 @@
   * [d.逻辑运算符](04yun-suan-fu/dluo-ji-yun-suan-fu.md)
   * [与短路 & 或短路](04yun-suan-fu/yu-duan-lu-and-huo-duan-lu.md)
   * [e.其它运算符](04yun-suan-fu/eqi-ta-yun-suan-fu.md)
-  * [与短路 & 或短路](04yun-suan-fu/yu-duan-lu-and-huo-duan-lu.md)
 * [05\_流程控制](05liu-cheng-kong-zhi.md)
 * [06\_函数](06han-shu.md)
 * [07\_数组](07shu-zu.md)
