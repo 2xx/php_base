@@ -31,6 +31,22 @@
 
 
     $a();  // 调用函数    注意: 匿名函数不会提前加载到内存
+    
+?>
+```
+
+```php
+<?php
+
+    function test()
+    {
+        $name = '小甜甜';
+        return function()use($name){
+            echo '我是test函数内部的一个匿名函数<br>';
+            echo '我可以使用test函数中的局部变量$name,它的值是 '.$name;
+        };
+    }
+
 ?>
 ```
 
