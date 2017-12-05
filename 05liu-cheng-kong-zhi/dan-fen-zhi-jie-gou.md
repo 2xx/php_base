@@ -43,7 +43,7 @@
 
 ```php
 <?php
-    
+
     /* 语法格式:
         if (条件1) {
             // 条件1成立时, 执行这里的代码
@@ -64,6 +64,10 @@
         echo '良好';
     } else if ($score >= 70 && $score < 80) {
         echo '中等';
+    } else if ($score >= 60 && $score < 70) {
+        echo '及格';
+    } else if ($score >= 0 && $score < 60) {
+        echo '不及格!';
     }
 
 ?>
