@@ -59,14 +59,16 @@
 
 ```php
 <?php
-
+    
     $a = function xxoo($n)use(&$a){
             echo $n,'<br>';
             if ($n > 1) {
                 $a($n - 1);
             }
     };
-
+    
+    $a(5);
+    
 ?>
 ```
 
