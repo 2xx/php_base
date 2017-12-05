@@ -1,10 +1,11 @@
 ```php
 <?php
-    
+
     $x = 2; 
     $y = 3;
-    test($x, $y);  // $x, $y 称为实参   $a=$x;  $b=$y;
-    
+    test($x, $y);  // $x, $y 称为实参   
+                   // 调用函数时,将实参赋值给形参 $a=$x;  $b=$y;
+
     function test($a, $b)  // $a, $b 称为形参
     {
         echo $a + $b;
