@@ -6,7 +6,7 @@
     function test()
     {
         return 5;
-        echo '今天作业不用写了';
+        echo '今天作业不用写了'; //  return 后的语句不会执行
     }
 
 ?>
