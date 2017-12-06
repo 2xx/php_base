@@ -56,15 +56,32 @@
 
 ```php
 <?php
-    
+
     $arr['name'] = '张三';
     $arr['sex'] = '男';
     $arr['age'] = 18;
-    
+
     echo '<pre>';
     print_r( $arr );  // 查看整个数组
 
     var_dump( $arr ); // 查看整个数组
+
+?>
+```
+
+#### 其它一些处理
+
+```php
+<?php
+
+    $arr['name'] = '张三';
+    $arr['sex'] = '男';
+    $arr['age'] = 18;
+
+    $k = 'name';
+    
+    echo $arr[ $k ];   // 输出 张三
+    
 
 ?>
 ```
