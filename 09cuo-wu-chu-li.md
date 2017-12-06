@@ -22,5 +22,17 @@
 ?>
 ```
 
+#### 通过修改 php.ini  决定错误处理方式
+
+display\_errors  = On/Off         是否在页面上显示错误信息
+
+log\_errors = On/Off                 是否把发生的错误记录在日志文件中
+
+error\_log="\xampp\php\logs\php\_error\_log"      日志文件的位置
+
+error\_reporting =   E\_ALL & ~E\_NOTICE    设置哪些错误需要报告, 所有错误都报告, 除了提示性错误
+
+**补充说明:**
+
 
 
