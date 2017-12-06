@@ -8,13 +8,13 @@
      <input type='submit' value='提交' />
 </form>
 <!--
-	 1) method   必须是 POST
-	 2) enctype='multipart/form-data'   这一项必须有
-	 3) input 标签中 type='file'   必须有 name 值
+     1) method   必须是 POST
+     2) enctype='multipart/form-data'   这一项必须有
+     3) input 标签中 type='file'   必须有 name 值
 
-	多文件上传:
-	   方式一:   
-	     <input type='file' name='pic[]' />
+    多文件上传:
+       方式一:   
+         <input type='file' name='pic[]' />
              <input type='file' name='pic[]' />
 
        方式二:
@@ -22,15 +22,13 @@
 -->
 ```
 
-
-
 ##### 二. 接收数组信息
 
 ```php
 <?php
 
-	echo '<pre>';
-	print_r( $_FILES['pic'] );   // 接收表单传过来的 上传文件信息
+    echo '<pre>';
+    print_r( $_FILES['pic'] );   // 接收表单传过来的 上传文件信息
 
 ?>
 ```
@@ -81,18 +79,18 @@
 
 ```php
 <?php
-	$error = $_FILES['pic']['error'];
-	
-	$msg = '';
-	switch($error){
-      	    case 0: $msg='上传成功'; break;
+    $error = $_FILES['pic']['error'];
+
+    $msg = '';
+    switch($error){
+              case 0: $msg='上传成功'; break;
             case 1: $msg='文件过大'; break;
             case 2: $msg='文件过大'; break;
             case 3: $msg='部分文件被上传'; break;
             case 4: $msg='没有文件被上传'; break;
             case 6: $msg='找不到临时目录'; break;
             case 7: $msg='写入文件失败'; break;
-	}
+    }
 
 ?>
 ```
@@ -104,12 +102,12 @@
 ```php
 <?php
 
-	$type = ['image/jpeg', 'image/png', 'image/gif'];
-	
-	$ty = $_FILES['pic']['type'];
-	if (!in_array($ty, $type)) {
-      		die('上传文件的类型不符合要求');
-	}
+    $type = ['image/jpeg', 'image/png', 'image/gif'];
+
+    $ty = $_FILES['pic']['type'];
+    if (!in_array($ty, $type)) {
+              die('上传文件的类型不符合要求');
+    }
 
 ?>
 ```
@@ -121,13 +119,13 @@
 ```php
 <?php
 
-	$max_size = 4096;
-	
-	$size = $_FILES['pic']['size'];
-	
-	if ($size > $max_size) {
+    $max_size = 4096;
+
+    $size = $_FILES['pic']['size'];
+
+    if ($size > $max_size) {
             die('上传文件超过要求大小');
-	}
+    }
 
 ?>
 ```
@@ -138,20 +136,18 @@
 
 ```php
 <?php
-	
+
     $path = './uploads/';
     $ext = pathinfo($_FILES['pic']['name'], PATHINFO_EXTENSION);  // 取得 扩展名
-  
+
     do{
-      
+
        $dstName = $path.date('YmdHis').rand(1000,9999).'/'.$ext; // 拼装 目标文件名
-      
+
     } while ( file_exists( $dstName ) );  // 判断目标文件是否存在, 如果存在,循环生成一个新名字
 
 ?>
 ```
-
-
 
 ##### 八. 专门用于文件上传的两个函数
 
@@ -161,9 +157,9 @@
 
 ```php
 <?php
- 
+
     $tmpName = $_FILES['pic']['tmp_name'];
-    
+
     if (is_uploaded_file($tmpName)) {
         move_uploaded_file($tmpName, $dstName);
     }
@@ -171,27 +167,33 @@
 ?>
 ```
 
-
-
 ##### 九. 多文件上传数组变形
 
 ```php
 <?php
 
-	foreach($_FILES['pic']['name'] as $k => $v){
-    		$uploads[$k]['name']     = $v;
-               $uploads[$k]['type']     = $_FILES['type'][$k];
-      		$uploads[$k]['tmp_name'] = $_FILES['tmp_name'][$k];
-      		$uploads[$k]['error']    = $_FILES['error'][$k];
-      		$uploads[$k]['size']     = $_FILES['size'][$k];
-	}
+    foreach($_FILES['pic']['name'] as $k => $v){
+            $uploads[$k]['name']     = $v;
+            $uploads[$k]['type']     = $_FILES['type'][$k];
+            $uploads[$k]['tmp_name'] = $_FILES['tmp_name'][$k];
+            $uploads[$k]['error']    = $_FILES['error'][$k];
+            $uploads[$k]['size']     = $_FILES['size'][$k];
+    }
 
 ?>
 ```
 
-
-
 ##### 十. 文件下载
+
+```php
+<?php
+	header("Content-Type:类型"); //指定响应类型
+	header("Content-Disposition:attachment;filename=文件名"); //**执行下载文件名
+	header("Content-Length:文件大小");
+
+	readfile("./uploads/".$picname); //读取并输出图片内容；
+?>
+```
 
 
 
