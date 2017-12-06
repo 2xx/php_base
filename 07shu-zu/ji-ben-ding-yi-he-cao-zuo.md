@@ -79,9 +79,9 @@
     $arr['age'] = 18;
 
     $k = 'name';
-    
     echo $arr[ $k ];   // 输出 张三
-    
+
+    echo $arr[ name ]; // 报错, 常量未定义, 然后把 name 理解为字串, 输出张三
 
 ?>
 ```
