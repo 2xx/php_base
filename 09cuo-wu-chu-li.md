@@ -34,8 +34,7 @@ error\_reporting =   E\_ALL & ~E\_NOTICE    设置哪些错误需要报告, 所�
 
 ##### php配置文件  php.ini  **补充说明:**
 
-文件位置: 通过 phpinfo\(\); 可以查看  
-  Loaded Configuration File     C:\xampp\php\php.ini
+文件位置: 通过 phpinfo\(\); 可以查看   Loaded Configuration File     C:\xampp\php\php.ini
 
 #### 在php代码中临时修改 错误处理方式
 
