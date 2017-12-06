@@ -46,22 +46,22 @@ class 类名
 ?>
 ```
 
-####  对象运算符
+#### 对象运算符
 
 > **成员属性 赋值**
 
 ```php
-	$obj -> name = '小明';   // 要注意 属性前面没有$
-	$obj -> sex  = '男';
-	$obj -> age  = 23;
+    $obj -> name = '小明';   // 要注意 属性前面没有$
+    $obj -> sex  = '男';
+    $obj -> age  = 23;
 ```
 
 > **成员属性 输出**
 
 ```php
-	echo $obj -> name;
-	echo $obj -> sex;
-	echo $obj -> age;
+    echo $obj -> name;
+    echo $obj -> sex;
+    echo $obj -> age;
 ```
 
 > **成员方法 调用**
@@ -73,9 +73,9 @@ class 类名
 > **成员属性的添加与删除**
 
 ```php
-	$obj -> xxoo = 'abcdefg';
+    $obj -> xxoo = 'abcdefg';
 
-	unset($obj->xxoo);
+    unset($obj->xxoo);
 ```
 
 ### $this
@@ -83,21 +83,21 @@ class 类名
 ##### $this 代表它所在的对象
 
 ```php
-	class Student
-	{
-		public $name;
+    class Student
+    {
+        public $name;
 
-		function say()
-		{
-			echo '名字: '.$this->name;
-		}
-	}
+        function say()
+        {
+            echo '名字: '.$this->name;
+        }
+    }
 
-	$xm = new Student;          // 定义一个$xm变量, 它是一个对象类型
+    $xm = new Student;          // 定义一个$xm变量, 它是一个对象类型
 
-	$xm -> name = '小明';       // 给对象中的 name 赋一个值
+    $xm -> name = '小明';       // 给对象中的 name 赋一个值
 
-	$xm -> say();              // 输出   名字: 小明
+    $xm -> say();              // 输出   名字: 小明
 ```
 
 ##### return $this 连贯操作
@@ -110,13 +110,13 @@ class 类名
             echo 'a方法<br>';
             return $this;     // 返回对象自身.
          }
-         
+
          public function b()
          {
             echo 'b方法<br>';
             return $this;    // 返回对象自身
          }
-         
+
          public function c()
          {
             echo 'c方法<br>';
@@ -124,11 +124,27 @@ class 类名
          }
     }
 
-    
+
     $obj = new xxoo;
 
     $obj -> a() -> b() -> c();  // 可以这样调用成员方法
 ```
 
+##### 对象的比较
 
+**`==`**同一个类的对象, 属性和属性值相等, 返回true
+
+**`===`**必须是同一个实例, 完完全全的同一个对象
+
+​
+
+##### 对象`instanceof`类
+
+判断对象是否属于这个类, 是否由这个类实例化出来的.
+
+
+
+##### get\_class\(对象\) 获取对象所属的类名称
+
+如果get\_class\(\)写在类中, 可以没有参数.从而得到本类的名称.
 
