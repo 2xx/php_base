@@ -66,4 +66,5 @@
 * [14\_面向对象OOP](14mian-xiang-dui-xiang-oop.md)
   * [类&对象基本操作](14mian-xiang-dui-xiang-oop/7c7b26-dui-xiang-ji-ben-cao-zuo.md)
   * [对象属于引用类型](14mian-xiang-dui-xiang-oop/dui-xiang-shu-yu-yin-yong-lei-xing.md)
+  * 构造方法
 
