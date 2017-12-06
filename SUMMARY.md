@@ -39,8 +39,9 @@
   * [a.概念理解与定义](06han-shu/agai-nian-li-jie-yu-ding-yi.md)
   * [b.形参&实参、引用传参](06han-shu/bxing-53c226-shi-can-3001-yin-yong-chuan-can.md)
   * [c.返回值 return](06han-shu/cfan-hui-zhi-return.md)
+  * [局部变量  静态变量  全局变量](06han-shu/ju-bu-bian-liang-jing-tai-bian-liang-quan-ju-bian-liang.md)
   * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
-  * e.引入文件  include
+  * [e.引入文件  include](06han-shu/eyin-ru-wen-jian-include.md)
   * 通过手册学习系统函数
 * [07\_数组](07shu-zu.md)
   * [概念理解与分类](07shu-zu/gai-nian-li-jie.md)
