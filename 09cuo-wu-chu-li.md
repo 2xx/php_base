@@ -32,7 +32,21 @@ error\_log="\xampp\php\logs\php\_error\_log"      日志文件的位置
 
 error\_reporting =   E\_ALL & ~E\_NOTICE    设置哪些错误需要报告, 所有错误都报告, 除了提示性错误
 
-**补充说明:**
+##### php配置文件  php.ini  **补充说明:**
+
+文件位置: 通过 phpinfo\(\); 可以查看  Loaded Configuration File     C:\xampp\php\php.ini 
+
+#### 在php代码中临时修改 错误处理方式
 
 
+
+ini\_get\( 'error\_log' \)      获取 php.ini 中的某项设置     ini\_get\_all\(\) 可以一次性获取所有选项
+
+
+
+ini\_set\('display\_errors', 'On'\)     临时修改 php.ini 中的某项. 仅在当前文件中有效.
+
+
+
+error\_reporting\(E\_ALL & ~E\_NOTICE\)   临时关闭错误报告,  仅在当前文件中有效
 
