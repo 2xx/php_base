@@ -55,6 +55,7 @@
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
   * [概念理解](08zheng-ze-biao-da-shi/gai-nian-li-jie.md)
   * [正则表达式常见写法](08zheng-ze-biao-da-shi/zheng-ze-biao-da-shi-chang-jian-xie-fa.md)
+  * [正则表达式处理函数](08zheng-ze-biao-da-shi/zheng-ze-biao-da-shi-chu-li-han-shu.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
 * [10\_时间日期](10shi-jian-ri-qi.md)
 * [11\_目录操作](11mu-lu-cao-zuo.md)
