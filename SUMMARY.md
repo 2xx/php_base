@@ -46,7 +46,7 @@
 * [07\_数组](07shu-zu.md)
   * [概念理解与分类](07shu-zu/gai-nian-li-jie.md)
   * [基本定义和操作](07shu-zu/ji-ben-ding-yi-he-cao-zuo.md)
-  * 通过 array  和 \[  \] 定义
+  * [通过 array  和 \[  \] 定义](07shu-zu/tong-guo-array-he-ding-yi.md)
   * [遍历数组  foreach](07shu-zu/bian-li-shu-zu-foreach.md)
   * 另外三种遍历
   * 超全局数组
