@@ -51,7 +51,7 @@
   * [另外三种遍历](07shu-zu/ling-wai-san-zhong-bian-li.md)
   * [超全局数组](07shu-zu/chao-quan-ju-shu-zu.md)
   * [二维数组](07shu-zu/er-wei-shu-zu.md)
-  * 函数变长参数
+  * [函数变长参数](07shu-zu/han-shu-bian-chang-can-shu.md)
 * [08\_正则表达式](08zheng-ze-biao-da-shi.md)
 * [09\_错误处理](09cuo-wu-chu-li.md)
 * [10\_时间日期](10shi-jian-ri-qi.md)
