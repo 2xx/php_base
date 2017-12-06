@@ -22,22 +22,22 @@
 ##### 利用 构造函数 和 $this 给对象的属性赋值
 
 ```php
-	class User
-	{
-		public $name;
-		public $sex;
-		public $age;
+    class User
+    {
+        public $name;
+        public $sex;
+        public $age;
 
-		function __construct($a, $b, $c)
-		{
-			$this -> name = $a;
-			$this ->  sex = $b;
-			$this ->  age = $c;
-		}
-	}
+        function __construct($a, $b, $c)
+        {
+            $this -> name = $a;
+            $this ->  sex = $b;
+            $this ->  age = $c;
+        }
+    }
 
 
-	$obj = new User('小明', '男', 24);        // 创建对象的同时 赋值
+    $obj = new User('小明', '男', 24);        // 创建对象的同时 赋值
 ```
 
 

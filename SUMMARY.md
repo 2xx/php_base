@@ -67,4 +67,5 @@
   * [类&对象基本操作](14mian-xiang-dui-xiang-oop/7c7b26-dui-xiang-ji-ben-cao-zuo.md)
   * [对象属于引用类型](14mian-xiang-dui-xiang-oop/dui-xiang-shu-yu-yin-yong-lei-xing.md)
   * 构造方法
+  * [析构方法](14mian-xiang-dui-xiang-oop/xi-gou-fang-fa.md)
 
