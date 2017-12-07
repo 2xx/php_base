@@ -152,17 +152,66 @@
         function go(){ echo '走路去'; }
     }
 
-	class Car    // 汽车类
+    class Car    // 汽车类
     {
         function go(){ echo '坐车去'; }
     }
+
+    class Ship   // 轮船类
+    {
+        function go(){ echo '乘船去'; }
+    }
+
+    class Plane   // 飞机类
+    {
+        function go(){ echo '搭飞机去'; }
+    }
+
+    class Person
+    {
+          // 去旅游
+          function toTravel( $obj )    // 以参数形式传入对象
+        {
+            $obj -> go();
+        }
+    }
+
+    $s = new Ship;
+    $p = new Plane;
+    $c = new Car;
+    $l = new Leg;
+
+    $ren = new Person;
+    $ren -> toTravel( $s );  // 坐轮船去
+    $ren -> toTravel( $p );  // 坐飞机去
+    $ren -> toTravel( $c );  // 坐汽车去
+    $ren -> toTravel( $l );  // 走路去~
+
+    /*  这样的编码要灵活很多  低耦合  */
+```
+
+​**问题:**如何保证传入 toTravel\( \)方法的 都有 go\( \) 方法?
+
+​**解决:**
+
+​ 1\) 声明一个 接口 , 要求有 go\( \) 方法
+
+​ 2\) 所有交通工类都要 实现 接口
+
+​ 3\) 对 toTravel\( \) 方法, 指定接口为类型约束
+
+```php
+	interface xxoo        // 1.声明一个接口
+    {
+         function go();
+    }
 	
-	class Ship   // 轮船类
+	class Ship implements xxoo  // 轮船类  实现接口
     {
         function go(){ echo '乘船去'; }
     }
     
-	class Plane   // 飞机类
+	class Plane implements xxoo // 飞机类  实现接口
     {
         function go(){ echo '搭飞机去'; }
     }
@@ -170,24 +219,25 @@
 	class Person
 	{
       	// 去旅游
-      	function toTravel( $obj )    // 以参数形式传入对象
+      	function toTravel( xxoo $obj )    // 以参数形式传入对象
         {
             $obj -> go();
         }
 	}
 
 	$s = new Ship;
-    $p = new Plane;
-    $c = new Car;
-    $l = new Leg;
 
     $ren = new Person;
 	$ren -> toTravel( $s );  // 坐轮船去
-	$ren -> toTravel( $p );  // 坐飞机去
-	$ren -> toTravel( $c );  // 坐汽车去
-    $ren -> toTravel( $l );  // 走路去~
 
-	/*  这样的编码要灵活很多  低耦合  */
+    
+	class UFO    // 宇宙飞船类  但是它没有实现接口
+    {
+          function fei(){ echo '坐宇宙飞船去'; }
+    }
+	$u = new UFO;
+
+	$ren -> toTravel( $u );  // 报错,  类型不符合要求
 ```
 
 
