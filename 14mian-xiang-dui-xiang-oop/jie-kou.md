@@ -201,44 +201,52 @@
 ​ 3\) 对 toTravel\( \) 方法, 指定接口为类型约束
 
 ```php
-	interface xxoo        // 1.声明一个接口
+    interface xxoo        // 1.声明一个接口
     {
          function go();
     }
-	
-	class Ship implements xxoo  // 轮船类  实现接口
+
+    class Ship implements xxoo  // 轮船类  实现接口
     {
         function go(){ echo '乘船去'; }
     }
-    
-	class Plane implements xxoo // 飞机类  实现接口
+
+    class Plane implements xxoo // 飞机类  实现接口
     {
         function go(){ echo '搭飞机去'; }
     }
 
-	class Person
-	{
-      	// 去旅游
-      	function toTravel( xxoo $obj )    // 以参数形式传入对象
+    class Person
+    {
+          // 去旅游
+          function toTravel( xxoo $obj )    // 以参数形式传入对象
         {
             $obj -> go();
         }
-	}
+    }
 
-	$s = new Ship;
+    $s = new Ship;
 
     $ren = new Person;
-	$ren -> toTravel( $s );  // 坐轮船去
+    $ren -> toTravel( $s );  // 坐轮船去
 
-    
-	class UFO    // 宇宙飞船类  但是它没有实现接口
+
+    class UFO    // 宇宙飞船类  但是它没有实现接口
     {
           function fei(){ echo '坐宇宙飞船去'; }
     }
-	$u = new UFO;
+    $u = new UFO;
 
-	$ren -> toTravel( $u );  // 报错,  类型不符合要求
+    $ren -> toTravel( $u );  // 报错,  类型不符合要求
 ```
 
+接口, 是类之间, 准确的说是不同的类的对象之间交互的手段.
 
+传入不同的对象, 就有不同的实现方式. 最终是要到达到目的地.
+
+所以, 在设计接口时, 不需要关心具体的实现. 它只是规范.
+
+就好像生活中打车去地铁站, 打车,不同的司机可能行驶路线是不同的, 但最终目的地是那个地铁站.
+
+这样的多种实现形态, 就称之为**`多态`**
 
