@@ -25,22 +25,24 @@
 判断一个**对象**是否属于某个**类**或该类的**子类**
 
 ```php
-	class Person
-    {
-      .....
-    }
-	
-	class Student extends Person
+    class Person
     {
       .....
     }
 
-	$obj = new Student;
+    class Student extends Person
+    {
+      .....
+    }
+
+    $obj = new Student;
     $xxoo = 10;
     var_dump( $obj instanceof Student );  // true
-	var_dump( $obj instanceof Person  );  // true
+    var_dump( $obj instanceof Person  );  // true
     var_dump( $xxoo instanceof Student);  // false
 ```
+
+**所以, 当约束类型是一个父类名称时, 子类的对象是可以被接受的.**
 
 
 

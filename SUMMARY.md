@@ -74,4 +74,5 @@
   * [命名空间](14mian-xiang-dui-xiang-oop/ming-ming-kong-jian.md)
   * [自动加载类处理函数](14mian-xiang-dui-xiang-oop/zi-dong-jia-zai-lei-chu-li-han-shu.md)
   * [类型约束](14mian-xiang-dui-xiang-oop/lei-xing-yue-shu.md)
+  * [抽象类](14mian-xiang-dui-xiang-oop/chou-xiang-lei.md)
 
