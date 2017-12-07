@@ -23,7 +23,7 @@
 ​ 3\) 方法中参数的类型, 个数必须一致. \(如果实现方法中参数个数多, 多出的参数可以给默认值\)
 
 ```php
-	interface animal	 // 声明接口
+    interface animal     // 声明接口
     {
          public run();
          public call();
@@ -37,6 +37,26 @@
 
     $obj = new yang;
     $obj -> call();
+```
+
+##### 声明一个接口, 同时继承多个接口 \(了解\)
+
+```php
+	interface aaa     // 声明接口
+    {
+       ....
+    }
+
+	interface bbb	 // 声明接口
+    {
+      ....
+    }
+
+	// 继承其他接口
+	interface xxoo extends aaa,bbb
+    {
+      
+    }
 ```
 
 
