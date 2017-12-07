@@ -76,4 +76,5 @@
   * [类型约束](14mian-xiang-dui-xiang-oop/lei-xing-yue-shu.md)
   * [抽象类](14mian-xiang-dui-xiang-oop/chou-xiang-lei.md)
   * [接口 interface](14mian-xiang-dui-xiang-oop/jie-kou.md)
+  * [异常 Exception](14mian-xiang-dui-xiang-oop/yi-chang-exception.md)
 
