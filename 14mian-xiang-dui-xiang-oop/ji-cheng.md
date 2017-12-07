@@ -161,5 +161,42 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
     }
 ```
 
+### trait
+
+与 class 相似, 但是用 trait 定义的结构,不能直接实例化对象
+
+用 trait 定义好的结构, 可以用在定义的类中.
+
+```php
+    trait xxx
+    {
+        private $name;
+        function a(){}
+        function b(){}
+    }
+
+    trait ooo
+    {   
+        private $sex;
+        function c(){}
+        function d(){}
+    }
+
+    class Person
+    {
+        use xxx,ooo;     // 把两个 trait 拿进来拼装这个类
+       function d(){}    // 重名
+       function e()
+       {
+       	     ooo::d();   // 调用 trait ooo 中的 d() 方法
+       }
+      
+    }
+
+    $obj = new Person;
+    $obj -> a();  
+    xxx::a();   // 可以直接调用 trait xxx 中的 a() 方法
+```
+
 
 
