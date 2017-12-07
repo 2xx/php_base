@@ -62,21 +62,57 @@
 ##### 一个类, 同时实现多个接口 \(了解\)
 
 ```php
-	interface aaa       // 声明接口
+    interface aaa       // 声明接口
     {
          function a();
     }
 
-	interface bbb       // 声明接口
+    interface bbb       // 声明接口
     {
          function b();
     }
 
-	// 同时实现多个接口
-	class xxoo implements aaa,bbb
+    // 同时实现多个接口
+    class xxoo implements aaa,bbb
     {
          function a(){ echo '实现a方法'; }
          function b(){ echo '实现b方法'; }
+    }
+```
+
+#### 接口的用处
+
+```php
+    class Leg     // 腿类
+    {
+        function to(){ echo '走路去'; }
+    }
+
+	class Car    // 汽车类
+    {
+        function go(){ echo '坐车去'; }
+    }
+	
+	class Ship   // 轮船类
+    {
+        function qu(){ echo '乘船去'; }
+    }
+    
+	class Plane   // 飞机类
+    {
+        function fei(){ echo '搭飞机去'; }
+    }
+
+	
+    
+	class Person   // 人类
+    {
+        // 去旅游
+        function toTravel()
+        {
+              $obj = new Car;  // 这里代码写死了,  这里称为 依赖,耦合
+              $obj -> go();
+        }
     }
 ```
 
