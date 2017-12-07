@@ -77,20 +77,70 @@ lamp188班的 小明
        use aaaa\A;
        use bbbb\A;
        use xx\oo\A;
-       
+
        new A;     // 重名
        new A;     // 重名
        new A;     // 重名
-       
-  
+
+
     use  aaaa\A   as  X;   // 起一个别名
     use  bbbb\A   as  Y;   // 起一个别名
     use  xx\oo\A  as  Z;   // 起一个别名
 
-	new X;   // 直接使用类名
+    new X;   // 直接使用类名
     new Y;   // 直接使用类名
     new Z;   // 直接使用类名
 ```
 
+### 5. 补充说明
 
+#### new \系统类;
+
+所有系统类, 在某个命名空间下使用的时候, 也需要指明其所在空间, \ 代表顶层空间
+
+比如 new**\PDO**\($dsn, 'root', ''\);
+
+也可以这样:
+
+#### use 系统类;
+
+#### new 系统类;
+
+
+
+**use aa\bb\User;**
+
+**User::class**会被转化为字符串 "**aa\bb\User**"
+
+
+
+**\aa\bb\User::class**会被转化为字符串 "**aa\bb\User**"
+
+## 
+
+​
+
+
+
+#### 必须知道的潜规则
+
+#### 1. 一个类 =&gt; 一个php文件
+
+#### 2. 类的名称, 应该是 php文件名称的一部分
+
+​ UserController.php 或 UserController.class.php
+
+​ require\("{**$clsName**}Controller.php"\);
+
+​ 或者
+
+​ require\("{**$clsName**}Controller.class.php"\);
+
+#### 3. 每个类 开头写一个 命名空间.
+
+#### 4. 命名空间的名称 写成 类文件所在的路径
+
+​ 如果 UserController.php 存放在 Controller/admin 目录下
+
+​ 命名空间就应该写成:**namespace Controller\admin;**
 
