@@ -146,3 +146,49 @@
 
 **解决:**把 Leg、Car、Ship、Plane 类的方法名全部改成 go\( \)
 
+```php
+    class Leg     // 腿类
+    {
+        function go(){ echo '走路去'; }
+    }
+
+	class Car    // 汽车类
+    {
+        function go(){ echo '坐车去'; }
+    }
+	
+	class Ship   // 轮船类
+    {
+        function go(){ echo '乘船去'; }
+    }
+    
+	class Plane   // 飞机类
+    {
+        function go(){ echo '搭飞机去'; }
+    }
+
+	class Person
+	{
+      	// 去旅游
+      	function toTravel( $obj )    // 以参数形式传入对象
+        {
+            $obj -> go();
+        }
+	}
+
+	$s = new Ship;
+    $p = new Plane;
+    $c = new Car;
+    $l = new Leg;
+
+    $ren = new Person;
+	$ren -> toTravel( $s );  // 坐轮船去
+	$ren -> toTravel( $p );  // 坐飞机去
+	$ren -> toTravel( $c );  // 坐汽车去
+    $ren -> toTravel( $l );  // 走路去~
+
+	/*  这样的编码要灵活很多  低耦合  */
+```
+
+
+
