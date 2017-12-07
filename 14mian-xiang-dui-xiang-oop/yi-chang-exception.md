@@ -25,19 +25,34 @@
 **其次, 把这个异常处理对象抛出\( throw \), 交由特定代码去处理**
 
 ```php
-	try{
-      	 $a = 7;
+    try{
+           $a = 7;
          $b = 0;
-      	 if ($b==0){    // 判断是否有异常情况
+           if ($b==0){    // 判断是否有异常情况
              throw new Exception('除数不能为0', 1234);  // 将创建的异常对象抛出
-      	 }
-      	 echo $a/$b,'<br>';    // 如果上面有异常抛出, 这里的代码就不会执行
-	} catch(Exception $e) {
+           }
+           echo $a/$b,'<br>';    // 如果上面有异常抛出, 这里的代码就不会执行
+    } catch(Exception $e) {
          echo $e->getMessage(),'<br>';
-      	 $b = 1;
-	}
+           $b = 1;
+    }
 
-	echo '我是下面的代码';
+    echo '我是下面的代码';
+```
+
+PDOException 是专门处理PDO错误的异常处理类. 
+
+用PDO操作数据库发生错误时, 会自动将错误异常抛出.
+
+```php
+	try{
+      
+      $dsn = 'mysql:host=localhost;dbname=myshop;charset=utf8';
+      $pdo = new PDO($dsn, 'root', '');   // 如果有错, 自动抛出异常
+      
+	} catch(PDOException $e) {    // 捕获异常
+         // 处理异常
+	}
 ```
 
 
