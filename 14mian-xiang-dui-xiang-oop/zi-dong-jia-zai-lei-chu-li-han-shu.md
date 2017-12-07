@@ -36,7 +36,41 @@
 
     new User;   // 没有User类定义,  1)触发xx()函数  2)触发oo()函数
 
-				// 如果 xx()函数执行了, 加载了 User 类的定义, 那么 oo() 函数就不会执行了
+                // 如果 xx()函数执行了, 加载了 User 类的定义, 那么 oo() 函数就不会执行了
+```
+
+##### 自动加载 与 命名空间结合使用
+
+```php
+	function __autoload($clsName)
+    {
+         // 把命名空间中的 \ 替换成 /
+         $clsName = str_replace('\\', '/', $clsName);  
+      
+         if ( file_exists("./controller/{$clsName}Controller.php") ) {
+           
+              require("./controller/{$clsName}Controller.php");
+         
+         } else if ( file_exists("./lib/{$clsName}Controller.php") ) {
+           
+              require("./lib/{$clsName}Controller.php");
+           
+         } else {
+            
+              die('找不到类的定义文件!');
+           
+         }
+      
+    }
+
+    $obj = new \admin\User;  
+
+   /*
+      1) 触发 __autoload()时, 形参为  admin\User   没有前面的 \
+      2) 函数尝试 引入  ./controller/admin/UserController.php
+      3) 失败则继续尝试 引入   ./lib/admin/UserController.php
+      4) 都失败, 则输出 找不到定义文件,并结束代码.
+   */
 ```
 
 
