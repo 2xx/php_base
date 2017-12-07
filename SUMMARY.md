@@ -72,4 +72,5 @@
   * [封装](14mian-xiang-dui-xiang-oop/feng-zhuang.md)
   * [继承](14mian-xiang-dui-xiang-oop/ji-cheng.md)
   * [命名空间](14mian-xiang-dui-xiang-oop/ming-ming-kong-jian.md)
+  * [自动加载类处理函数](14mian-xiang-dui-xiang-oop/zi-dong-jia-zai-lei-chu-li-han-shu.md)
 
