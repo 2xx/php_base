@@ -3,13 +3,40 @@
 #### 声明一个接口
 
 ```php
-	interface 接口名
+    interface 接口名
     {
-      					 // 不能有成员属性
-      
+                           // 不能有成员属性
+
          function a();   // 1)没有函数体  2)必须是public
          function b();
     }
+```
+
+#### 实现接口, 形成一个类
+
+按照接口定义类时,**要求:**
+
+​ 1\) 必须实现接口中的所有方法. \(或者是抽象类\)
+
+​ 2\) 方法名称必须相同.
+
+​ 3\) 方法中参数的类型, 个数必须一致. \(如果实现方法中参数个数多, 多出的参数可以给默认值\)
+
+```php
+	interface animal	 // 声明接口
+    {
+         public run();
+         public call();
+    }
+
+    class yang  implements animal    // 实现接口
+    {
+         public run(){ echo '四蹄狂奔'; }    // 实现成员方法
+         public call(){ echo '咩咩咩'; }     
+    }
+
+    $obj = new yang;
+    $obj -> call();
 ```
 
 
