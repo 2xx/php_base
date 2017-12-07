@@ -102,10 +102,10 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
   class A
   {
       static public $abc = 'jingshui';    // 1.定义静态成员
-  
+
       function xxoo()
       { 
-    	  echo self::$abc;     // 2.成员方法中访问
+          echo self::$abc;     // 2.成员方法中访问
       }
   }
 
@@ -123,7 +123,7 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
   class A
   {
      const XXOO = 'jingshui';   // 1.定义常量
-   
+
      function say()
      {
          echo self::XXOO;       // 2.成员方法中 访问常量
@@ -134,6 +134,31 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
 
   $obj = new A;
   echo $obj::XXOO;  // 4. 外部 对象::常量名
+```
+
+### 单例模式
+
+单例设计模式, 让这个类只能实例化一个对象.
+
+```
+    class A
+    {
+         static private $obj;    // 1.定义 静态+私有 成员属性
+      
+         private function __construct()  // 2.私有化 构造方法  之后就不能 new 了
+         {
+           
+         }
+      
+         static function getObj()      // 3.静态+公有, 获取一个对象
+         {
+              if ( empty(self::$obj) ) {
+                 self::$obj = new self;  // 如果以前没有创建过对象,就创建一个保存起来
+              } 
+              return self::$obj;   // 返回类中保存的对象实例
+         }
+      
+    }
 ```
 
 
