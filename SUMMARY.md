@@ -77,4 +77,5 @@
   * [抽象类](14mian-xiang-dui-xiang-oop/chou-xiang-lei.md)
   * [接口 interface](14mian-xiang-dui-xiang-oop/jie-kou.md)
   * [异常 Exception](14mian-xiang-dui-xiang-oop/yi-chang-exception.md)
+  * [常用类&对象处理函数](14mian-xiang-dui-xiang-oop/chang-yong-7c7b26-dui-xiang-chu-li-han-shu.md)
 
