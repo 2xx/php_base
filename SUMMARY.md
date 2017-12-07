@@ -70,9 +70,10 @@
   * [析构方法](14mian-xiang-dui-xiang-oop/xi-gou-fang-fa.md)
   * [PDO操作数据库](14mian-xiang-dui-xiang-oop/pdocao-zuo-shu-ju-ku.md)
   * [封装](14mian-xiang-dui-xiang-oop/feng-zhuang.md)
-  * [继承](14mian-xiang-dui-xiang-oop/ji-cheng.md)
+  * [继承  extends](14mian-xiang-dui-xiang-oop/ji-cheng.md)
   * [命名空间](14mian-xiang-dui-xiang-oop/ming-ming-kong-jian.md)
   * [自动加载类处理函数](14mian-xiang-dui-xiang-oop/zi-dong-jia-zai-lei-chu-li-han-shu.md)
   * [类型约束](14mian-xiang-dui-xiang-oop/lei-xing-yue-shu.md)
   * [抽象类](14mian-xiang-dui-xiang-oop/chou-xiang-lei.md)
+  * [接口 interface](14mian-xiang-dui-xiang-oop/jie-kou.md)
 
