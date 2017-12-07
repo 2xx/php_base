@@ -42,18 +42,48 @@ DSN \( Data Source Name \) 数据源名
 #### 判断SQL语句 语法错误
 
 ```php
-	// 如果有语法错误, 就打印错误信息, 结束代码执行
-	if ( $pdo -> errorCode() ) {
+    // 如果有语法错误, 就打印错误信息, 结束代码执行
+    if ( $pdo -> errorCode() ) {
         die( $pdo->errorInfo()[2] );
-	}
+    }
 
-	/*
+    /*
         $pdo -> errorCode()    没有错误 返回0     
                                  有错误 返回非0
-                                 
+
         $pdo -> errorInfo()  返回一个数组, 数组中[2] 是错误信息                         
-	*/
+    */
 ```
+
+### 判断SQL语句 执行结果
+
+#### 受影响行数
+
+$pdo -&gt; exec\( \) 的返回值
+
+insert delete update 语句. 需要通过 受影响行数 来判断是否执行成功.
+
+
+
+#### 返回记录数
+
+select 语句. 需要通过 返回记录数 来判断有没有符合条件的记录.
+
+$sql = "select \* from users where age&lt;20";
+
+$stmt = $pdo -&gt; query\( $sql \);
+
+$users = $stmt -&gt; fetchAll\( PDO::FETCH\_CLASS \); 如果没有符合条件的记录, 会返回空数组
+
+**方法一:**count\( $users \); 返回结果是一个数组, 统计数组元素个数就可以
+
+**方法二:**select count\(\*\) from users where 条件;
+
+
+
+
+
+### 封装, 强调围绕着对象的操作编写代码
 
 
 
