@@ -126,20 +126,20 @@
 
 ​ 第一, 在外部创建对象, 以参数的形式传入到 toTravel\( \) 方法
 
-```
-	class Person
-	{
-      	// 去旅游
-      	function toTravel( $obj )    // 以参数形式传入对象
+```php
+    class Person
+    {
+          // 去旅游
+          function toTravel( $obj )    // 以参数形式传入对象
         {
             $obj -> go();
         }
-	}
+    }
 
-	$p = new Person;   // 创建一个 人 对象
+    $p = new Person;   // 创建一个 人 对象
     $c = new Car;      // 创建一个 车 对象
-	
-	$p -> toTravel( $c );  // 把  车对象 传入
+
+    $p -> toTravel( $c );  // 把  车对象 传入
 ```
 
 
