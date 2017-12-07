@@ -140,16 +140,16 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
 
 单例设计模式, 让这个类只能实例化一个对象.
 
-```
+```php
     class A
     {
          static private $obj;    // 1.定义 静态+私有 成员属性
-      
+
          private function __construct()  // 2.私有化 构造方法  之后就不能 new 了
          {
-           
+
          }
-      
+
          static function getObj()      // 3.静态+公有, 获取一个对象
          {
               if ( empty(self::$obj) ) {
@@ -157,7 +157,7 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
               } 
               return self::$obj;   // 返回类中保存的对象实例
          }
-      
+
     }
 ```
 
