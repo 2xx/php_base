@@ -88,24 +88,24 @@
         function to(){ echo '走路去'; }
     }
 
-	class Car    // 汽车类
+    class Car    // 汽车类
     {
         function go(){ echo '坐车去'; }
     }
-	
-	class Ship   // 轮船类
+
+    class Ship   // 轮船类
     {
         function qu(){ echo '乘船去'; }
     }
-    
-	class Plane   // 飞机类
+
+    class Plane   // 飞机类
     {
         function fei(){ echo '搭飞机去'; }
     }
 
-	
-    
-	class Person   // 人类
+
+
+    class Person   // 人类
     {
         // 去旅游
         function toTravel()
@@ -114,6 +114,32 @@
               $obj -> go();
         }
     }
+```
+
+**1. 现实世界有不同的类, 那么就有相应的不同的对象, 对象不是孤立的, 各种对象之间应该发生关系.**
+
+**2. 上面的代码有缺限**
+
+**问题:**在 Person 类的 toTravel 方法中, 必须是坐车去, 代码是写死了, 如果想改坐飞机, 必须修改类代码.
+
+**解决 :**
+
+​ 第一, 在外部创建对象, 以参数的形式传入到 toTravel\( \) 方法
+
+```
+	class Person
+	{
+      	// 去旅游
+      	function toTravel( $obj )    // 以参数形式传入对象
+        {
+            $obj -> go();
+        }
+	}
+
+	$p = new Person;   // 创建一个 人 对象
+    $c = new Car;      // 创建一个 车 对象
+	
+	$p -> toTravel( $c );  // 把  车对象 传入
 ```
 
 
