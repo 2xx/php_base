@@ -86,8 +86,54 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
   // 这个类不允许被继承
   final class A
   {
-  
+
   }
+```
+
+### static
+
+写在成员属性之前, 成员称为**静态成员属性**
+
+静态成员属性, 是静态的, 保存在类的定义内存中. 不管对象创建与销毁, 它都存在.
+
+**self::**代表本类的
+
+```php
+  class A
+  {
+      static public $abc = 'jingshui';    // 1.定义静态成员
+  
+      function xxoo()
+      { 
+    	  echo self::$abc;     // 2.成员方法中访问
+      }
+  }
+
+  echo A::$abc;     // 3.外部 通过 类名::$属性名 访问
+
+  $obj = new A;
+  echo $obj::$abc;  // 4.外部 通过 对象::$属性名 访问  (这样访问慢一点)
+```
+
+### 常量 const
+
+##### 在类的内部定义常量, 只能使用 const
+
+```php
+  class A
+  {
+     const XXOO = 'jingshui';   // 1.定义常量
+   
+     function say()
+     {
+         echo self::XXOO;       // 2.成员方法中 访问常量
+     }
+  }
+
+  echo A::XXOO;     // 3. 外部 类名::常量名
+
+  $obj = new A;
+  echo $obj::XXOO;  // 4. 外部 对象::常量名
 ```
 
 
