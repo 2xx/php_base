@@ -188,15 +188,17 @@ A 中的所有成员 , B 中也都有. A =&gt; 父类 B =&gt; 子类
        function d(){}    // 重名
        function e()
        {
-       	     ooo::d();   // 调用 trait ooo 中的 d() 方法
+                ooo::d();   // 调用 trait ooo 中的 d() 方法
        }
-      
+
     }
 
     $obj = new Person;
     $obj -> a();  
     xxx::a();   // 可以直接调用 trait xxx 中的 a() 方法
 ```
+
+##### 成员方法同名时的优先级别: 子类方法  =&gt; trait方法  =&gt; 父类方法
 
 
 
