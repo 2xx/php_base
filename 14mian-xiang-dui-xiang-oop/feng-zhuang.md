@@ -21,21 +21,46 @@
 ```php
 <?php
 
-	class User
-	{
+    class User
+    {
         private $age;
-      
+
         function __set($a, $b)   // 触发调用时, 会有两个参数, $a 代表属性名   $b 代表属性值
         {
-          	 // 如果 设置的是 age  并且 在合理范围内
+               // 如果 设置的是 age  并且 在合理范围内
              if ($a == 'age' && $b > 0 && $b < 100) {
                  $this -> $a = $b;
              } 
         }
-	}
+    }
 
     $a = new User;
     $a -> age = 40;  // 触发
+
+?>
+```
+
+**\_\_get\( \)**
+
+成员属性不存在,或者不允许访问, 对这样的变量**读取**时会触发调用这个函数.
+
+```php
+<?php
+
+	class User
+	{
+        private $age;
+      
+        function __get( $a )    // 触发调用时, 会有一个参数, $a 代表要读取的属性名
+        {
+          	 // 如果 获取的是 age  并且 当前的一个设置为允许, 那么返回属性值
+             if ($a == 'age' && 权限 == true) {
+                 return $this -> age;
+             } 
+        }
+	}
+    $a = new User;
+    echo $a -> age;    // 触发
 
 ?>
 ```
