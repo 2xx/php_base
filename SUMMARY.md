@@ -69,4 +69,5 @@
   * [构造方法](14mian-xiang-dui-xiang-oop/gou-zao-fang-fa.md)
   * [析构方法](14mian-xiang-dui-xiang-oop/xi-gou-fang-fa.md)
   * [PDO操作数据库](14mian-xiang-dui-xiang-oop/pdocao-zuo-shu-ju-ku.md)
+  * [封装](14mian-xiang-dui-xiang-oop/feng-zhuang.md)
 
