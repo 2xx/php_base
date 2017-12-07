@@ -69,24 +69,22 @@
 
 **\_\_unset\( \)**成员属性不存在,或者不允许访问, 对这样的变量**销毁**时会触发调用这个函数.
 
-
-
 **\_\_call\( \)**成员方法不存在, 或者不允许调用, 这时会触发调用这个魔术方法.
 
-```
+```php
 <?php
 
-	class User
-	{
+    class User
+    {
        function __call($a, $b)
        {
           echo $a;       // 方法名
-          
+
           echo '<pre>';  
           print_r( $b ); // 参数数组   
        }
-      
-	}
+
+    }
 
    $a = new User;
 
