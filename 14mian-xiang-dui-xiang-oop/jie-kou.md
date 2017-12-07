@@ -42,20 +42,41 @@
 ##### 声明一个接口, 同时继承多个接口 \(了解\)
 
 ```php
-	interface aaa     // 声明接口
+    interface aaa     // 声明接口
     {
        ....
     }
 
-	interface bbb	 // 声明接口
+    interface bbb     // 声明接口
     {
       ....
     }
 
-	// 继承其他接口
-	interface xxoo extends aaa,bbb
+    // 继承其他接口
+    interface xxoo extends aaa,bbb
     {
-      
+
+    }
+```
+
+##### 一个类, 同时实现多个接口 \(了解\)
+
+```php
+	interface aaa       // 声明接口
+    {
+         function a();
+    }
+
+	interface bbb       // 声明接口
+    {
+         function b();
+    }
+
+	// 同时实现多个接口
+	class xxoo implements aaa,bbb
+    {
+         function a(){ echo '实现a方法'; }
+         function b(){ echo '实现b方法'; }
     }
 ```
 
