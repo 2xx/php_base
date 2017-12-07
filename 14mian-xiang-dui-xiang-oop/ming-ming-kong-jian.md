@@ -61,12 +61,35 @@ lamp188班的 小明
 
 ```php
     // 为了举例, 与上面代码无关
-   
+
     use  aa\bb\cc\dd\A;   // 之后new的时候就不用加命名空间了
     use  xx\yy\zz\nn\B;
-    
+
     new A;   
     new B;
+```
+
+#### 4. 解决重名
+
+#### 格式: use 空间名称\类名称 as 别名;
+
+```php
+       use aaaa\A;
+       use bbbb\A;
+       use xx\oo\A;
+       
+       new A;     // 重名
+       new A;     // 重名
+       new A;     // 重名
+       
+  
+    use  aaaa\A   as  X;   // 起一个别名
+    use  bbbb\A   as  Y;   // 起一个别名
+    use  xx\oo\A  as  Z;   // 起一个别名
+
+	new X;   // 直接使用类名
+    new Y;   // 直接使用类名
+    new Z;   // 直接使用类名
 ```
 
 
