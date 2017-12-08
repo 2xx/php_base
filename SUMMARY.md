@@ -42,7 +42,7 @@
   * [局部变量  静态变量  全局变量](06han-shu/ju-bu-bian-liang-jing-tai-bian-liang-quan-ju-bian-liang.md)
   * [d.其他调用方式](06han-shu/dqi-ta-diao-yong-fang-shi.md)
   * [e.引入文件  include](06han-shu/eyin-ru-wen-jian-include.md)
-  * 通过手册学习系统函数
+  * [通过手册学习系统函数](06han-shu/tong-guo-shou-ce-xue-xi-xi-tong-han-shu.md)
 * [07\_数组](07shu-zu.md)
   * [概念理解与分类](07shu-zu/gai-nian-li-jie.md)
   * [基本定义和操作](07shu-zu/ji-ben-ding-yi-he-cao-zuo.md)
