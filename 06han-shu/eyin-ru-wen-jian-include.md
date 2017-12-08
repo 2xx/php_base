@@ -6,9 +6,27 @@
 
 ```php
 <?php
-	include('文件名');   
+    include('文件名');   
 ?>
 ```
 
+**include\_once  **加载文件, 多次书写只会加载一次, 从而避免了重复加载而报错.
 
+```php
+<?php
+	include_once('文件名');   
+?>
+```
+
+**require  **加载文件, 如果有错, 程序结束, 后面的代码不会执行
+
+```php
+<?php
+	require('文件名');   
+?>
+```
+
+**require\_once   **加载文件, 多次书写只会加载一次, 如果报错, 就不会往后执行
+
+不推荐用 include\_once 和 require\_once , 其检查重复功能会耗费资源.
 
