@@ -81,8 +81,8 @@
 * [MySQL 数据库](mysql-shu-ju-ku.md)
   * [登录&退出](mysql-shu-ju-ku/deng-5f5526-tui-chu.md)
   * [库操作  Database](mysql-shu-ju-ku/ku-cao-zuo.md)
-    * 创建库
-    * 查看库
+    * [创建库](mysql-shu-ju-ku/ku-cao-zuo/chuang-jian-ku.md)
+    * [查看库](mysql-shu-ju-ku/ku-cao-zuo/cha-kan-ku.md)
     * 删除库
     * 打开库
     * 修改数据库字符集
