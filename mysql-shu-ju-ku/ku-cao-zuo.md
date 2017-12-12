@@ -1,6 +1,6 @@
 #### 创建数据库
 
-##### create database 库名 default charset=utf8;
+### `create database 库名 default charset=utf8;`
 
 ---
 
@@ -12,11 +12,13 @@
 >
 > ##### show create database 库名;   -- 显示创建数据库的语句
 
-
+#### 
 
 #### 删除数据库
 
-> ##### drop database 库名;
+### `drop database 库名;`
+
+
 
 #### 打开数据库
 
