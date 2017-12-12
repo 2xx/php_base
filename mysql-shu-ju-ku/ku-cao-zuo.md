@@ -2,7 +2,7 @@
 
 ### `create database 库名 default charset=utf8;`
 
-#### 
+创建数据库会在 mysql/data 中创建相应的文件夹.
 
 #### 查看数据库
 
@@ -16,7 +16,7 @@
 
 #### 删除数据库
 
-### **`drop database 库名;`**
+### `drop database 库名;`
 
 #### 
 
