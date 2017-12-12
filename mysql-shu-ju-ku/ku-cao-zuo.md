@@ -32,5 +32,5 @@
 
 ### `alter database 库名 charset utf8;`
 
-
+不建议修改.当库中已经有数据时,之前的数据不会变更.
 
