@@ -2,8 +2,6 @@
 
 ### `create database 库名 default charset=utf8;`
 
----
-
 #### 
 
 #### 查看数据库
