@@ -84,8 +84,8 @@
   * [表操作](mysql-shu-ju-ku/biao-cao-zuo.md)
   * [数据操作-增删改查](mysql-shu-ju-ku/shu-ju-cao-zuo.md)
   * [数据类型](mysql-shu-ju-ku/shu-ju-lei-xing.md)
-  * 密码操作
-  * 用户创建、授权、删除
+  * [密码操作](mysql-shu-ju-ku/mi-ma-cao-zuo.md)
+  * [用户创建、授权、删除](mysql-shu-ju-ku/yong-hu-chuang-jian-3001-shou-quan-3001-shan-chu.md)
   * [表引擎 Engine](mysql-shu-ju-ku/biao-yin-qing-engine.md)
   * 索引
 
