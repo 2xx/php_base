@@ -8,7 +8,11 @@
 
 #### `show create table 表名;`
 
-#### `show tables like 'shop%';  -- 查看名称以shop开头的表`
+#### 
+
+#### 查看名称以shop开头的表
+
+#### `show tables like 'shop%';`
 
 
 
