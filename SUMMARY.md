@@ -81,9 +81,25 @@
 * [MySQL 数据库](mysql-shu-ju-ku.md)
   * [登录&退出](mysql-shu-ju-ku/deng-5f5526-tui-chu.md)
   * [库操作  Database](mysql-shu-ju-ku/ku-cao-zuo.md)
+    * 创建库
+    * 查看库
+    * 删除库
+    * 打开库
+    * 修改数据库字符集
   * [表操作 Table](mysql-shu-ju-ku/biao-cao-zuo.md)
+    * [创建](mysql-shu-ju-ku/biao-cao-zuo/chuang-jian.md)
+    * [查看](mysql-shu-ju-ku/biao-cao-zuo/cha-kan.md)
+    * [删除表](mysql-shu-ju-ku/biao-cao-zuo/shan-chu-biao.md)
+    * [修改名称&字符集](mysql-shu-ju-ku/biao-cao-zuo/xiu-gai-ming-79f026-zi-fu-ji.md)
+    * [表字段操作](mysql-shu-ju-ku/biao-cao-zuo/biao-zi-duan-cao-zuo.md)
   * [数据操作-增删改查](mysql-shu-ju-ku/shu-ju-cao-zuo.md)
+    * [插入记录](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-ru-ji-lu.md)
+    * [删除记录](mysql-shu-ju-ku/shu-ju-cao-zuo/shan-chu-ji-lu.md)
+    * [修改记录](mysql-shu-ju-ku/shu-ju-cao-zuo/xiu-gai-ji-lu.md)
+    * [查询记录](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu.md)
   * [数据类型](mysql-shu-ju-ku/shu-ju-lei-xing.md)
+    * 数值型
+    * 字符型
   * [密码操作](mysql-shu-ju-ku/mi-ma-cao-zuo.md)
   * [用户创建、授权、删除](mysql-shu-ju-ku/yong-hu-chuang-jian-3001-shou-quan-3001-shan-chu.md)
   * [表引擎 Engine](mysql-shu-ju-ku/biao-yin-qing-engine.md)
