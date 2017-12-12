@@ -15,6 +15,13 @@ create table if not exists 表名(
 );
 ```
 
+```
+create table 表名(
+    字段名  数据类型,
+    字段名  数据类型
+)engine=innodb default charset=utf8;
+```
+
 例子:
 
 ```
