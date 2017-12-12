@@ -81,7 +81,7 @@
 * [MySQL 数据库](mysql-shu-ju-ku.md)
   * [登录&退出](mysql-shu-ju-ku/deng-5f5526-tui-chu.md)
   * [库操作](mysql-shu-ju-ku/ku-cao-zuo.md)
-  * 表操作
+  * [表操作](mysql-shu-ju-ku/biao-cao-zuo.md)
   * [数据操作-增删改查](mysql-shu-ju-ku/shu-ju-cao-zuo.md)
   * [数据类型](mysql-shu-ju-ku/shu-ju-lei-xing.md)
   * 密码操作
