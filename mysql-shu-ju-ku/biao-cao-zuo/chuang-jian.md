@@ -15,5 +15,16 @@ create table if not exists 表名(
 );
 ```
 
+例子:
+
+```
+create table users(
+    uid int,
+    uname char(4),
+    sex char(1),
+    age int
+);
+```
+
 
 
