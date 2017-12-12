@@ -92,7 +92,7 @@
     * [删除表](mysql-shu-ju-ku/biao-cao-zuo/shan-chu-biao.md)
     * [修改名称&字符集](mysql-shu-ju-ku/biao-cao-zuo/xiu-gai-ming-79f026-zi-fu-ji.md)
     * [表字段操作](mysql-shu-ju-ku/biao-cao-zuo/biao-zi-duan-cao-zuo.md)
-  * [数据操作-增删改查](mysql-shu-ju-ku/shu-ju-cao-zuo.md)
+  * [数据操作](mysql-shu-ju-ku/shu-ju-cao-zuo.md)
     * [插入记录](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-ru-ji-lu.md)
     * [删除记录](mysql-shu-ju-ku/shu-ju-cao-zuo/shan-chu-ji-lu.md)
     * [修改记录](mysql-shu-ju-ku/shu-ju-cao-zuo/xiu-gai-ji-lu.md)
