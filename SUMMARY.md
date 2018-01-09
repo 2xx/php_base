@@ -83,7 +83,7 @@
   * [库操作  Database](mysql-shu-ju-ku/ku-cao-zuo.md)
     * [创建库](mysql-shu-ju-ku/ku-cao-zuo/chuang-jian-ku.md)
     * [查看库](mysql-shu-ju-ku/ku-cao-zuo/cha-kan-ku.md)
-    * 删除库
+    * [删除库](mysql-shu-ju-ku/ku-cao-zuo/shan-chu-ku.md)
     * [打开库](mysql-shu-ju-ku/ku-cao-zuo/da-kai-ku.md)
     * [修改数据库字符集](mysql-shu-ju-ku/ku-cao-zuo/xiu-gai-shu-ju-ku-zi-fu-ji.md)
   * [表操作 Table](mysql-shu-ju-ku/biao-cao-zuo.md)
@@ -97,20 +97,20 @@
     * [删除记录](mysql-shu-ju-ku/shu-ju-cao-zuo/shan-chu-ji-lu.md)
     * [修改记录](mysql-shu-ju-ku/shu-ju-cao-zuo/xiu-gai-ji-lu.md)
     * [查询记录](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu.md)
-      * where 条件
-      * 统计&分组
-      * 排序 order by
+      * [where 条件](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/where-tiao-jian.md)
+      * [统计&分组](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/tong-8ba126-fen-zu.md)
+      * [排序 order by](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/pai-xu-order-by.md)
       * 分页 limit
       * [内联查询](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/nei-lian-cha-xun.md)
       * [左联&右联](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/zuo-805426-you-lian.md)
       * [子查询](mysql-shu-ju-ku/shu-ju-cao-zuo/cha-xun-ji-lu/zi-cha-xun.md)
   * [数据类型](mysql-shu-ju-ku/shu-ju-lei-xing.md)
-    * 数值型
-    * 字符型
+    * [数值型](mysql-shu-ju-ku/shu-ju-lei-xing/shu-zhi-xing.md)
+    * [字符型](mysql-shu-ju-ku/shu-ju-lei-xing/zi-fu-xing.md)
   * [密码操作](mysql-shu-ju-ku/mi-ma-cao-zuo.md)
   * [用户创建、授权、删除](mysql-shu-ju-ku/yong-hu-chuang-jian-3001-shou-quan-3001-shan-chu.md)
   * [表引擎 Engine](mysql-shu-ju-ku/biao-yin-qing-engine.md)
-  * 索引
+  * [索引](mysql-shu-ju-ku/suo-yin.md)
   * [数据导出](mysql-shu-ju-ku/shu-ju-dao-chu.md)
-  * 数据导入
+  * [数据导入](mysql-shu-ju-ku/shu-ju-dao-ru.md)
 
